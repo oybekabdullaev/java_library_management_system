@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="lms.windows.DisplayBorrowedBooksController">
+	<children>
+		<TableView fx:id="bookLoansTable" layoutX="1.0" prefHeight="402.0" prefWidth="973.0">
+			<columns>
+				<TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+				<TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+				<TableColumn fx:id="surname" prefWidth="75.0" text="Surname" />
+				<TableColumn fx:id="title" prefWidth="75.0" text="Title" />
+				<TableColumn fx:id="subject" prefWidth="75.0" text="Subject" />
+				<TableColumn fx:id="author" prefWidth="75.0" text="Author" />
+				<TableColumn fx:id="ISBN" prefWidth="75.0" text="ISBN" />
+				<TableColumn fx:id="publishDate" prefWidth="75.0" text="Publish Date" />
+				<TableColumn fx:id="issueDate" prefWidth="75.0" text="Issue date" />
+				<TableColumn fx:id="returnDate" prefWidth="75.0" text="Return Date" />
+			</columns>
+			<columnResizePolicy>
+				<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+			</columnResizePolicy>
+		</TableView>
+	</children>
+</AnchorPane>

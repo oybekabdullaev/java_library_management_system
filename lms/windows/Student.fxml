@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="429.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lms.windows.StudentController">
+   <children>
+      <Label fx:id="userNameField" layoutX="273.0" layoutY="31.0" prefHeight="50.0" prefWidth="240.0" text="Name">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="224.0" fitWidth="200.0" layoutX="42.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="./lms/images/no-avatar.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="userSurnameField" layoutX="273.0" layoutY="81.0" prefHeight="50.0" prefWidth="240.0" text="Surname">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="userRoleField" layoutX="273.0" layoutY="131.0" prefHeight="50.0" prefWidth="240.0" text="Student">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutButton" layoutX="433.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="39.0" prefWidth="128.0" text="Logout" />
+      <HBox layoutX="14.0" layoutY="347.0" prefHeight="68.0" prefWidth="570.0">
+         <children>
+            <Button fx:id="displayAllBooks" mnemonicParsing="false" onAction="#displayAllBooks" prefHeight="68.0" prefWidth="189.0" text="Display all books" />
+            <Button fx:id="displayBorrowedBooks" mnemonicParsing="false" onAction="#displayBorrowedBooks" prefHeight="68.0" prefWidth="189.0" text="Display borrowed books" />
+            <Button fx:id="displayFilteredBooks" mnemonicParsing="false" onAction="#displayFilteredBooks" prefHeight="68.0" prefWidth="189.0" text="Display books with filter" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
